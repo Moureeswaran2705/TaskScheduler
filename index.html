@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">TO DO List</h1>
+    <form >
+      <div class="input-group mb-2">
+        <input type="text" class="form-control"id="Task" placeholder="Task Name" aria -label="Task's name"aria-describedby="button-addon2">
+        <input type="date" class="form-control"id="date" placeholder="Date" aria-label="Date" aria-describedby="button-addon2">
+        <select id="priority" class="form-control" aria-label="Time" aria-describedby="button-addon2">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+      </select>
+        <button class="btn btn-outline-primary" onclick="newElement()" type="button" id="button-addon2">ADD</button>
+      </div>
+    </form>
+    <ul id="list">
+      <li> hello</li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
